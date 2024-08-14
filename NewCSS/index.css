@@ -1,0 +1,135 @@
+@import './curves.css';
+@import './style.css';
+@import './grid.css';
+
+* {
+    margin: 0;
+    background-color: #777;
+}
+
+.header {
+    background-color: #777;
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'img . more more';
+    height: 70px;
+}
+
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: more;
+}
+
+.more a {
+    text-decoration: none !important;
+    color: #000000;
+    font-family: sans-serif;
+    transition: all .3s;
+}
+
+.more a:hover {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
+    color: #a9a;
+}
+
+/* Animation for the logo */
+.logo {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    background-color: crimson;
+    animation: logo-color-change linear 8s infinite;
+}
+
+.logo:hover {
+    animation: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.logo::after {
+    animation: logo-spin infinite 4s ease-in-out both;
+}
+
+@keyframes logo-color-change {
+    5% {
+        background-color: rgb(255, 000, 000);
+    }
+
+    10% {
+        background-color: rgb(255, 100, 000);
+    }
+
+    15% {
+        background-color: rgb(255, 200, 000);
+    }
+
+    20% {
+        background-color: rgb(255, 255, 000);
+    }
+
+    25% {
+        background-color: rgb(200, 255, 000);
+    }
+
+    30% {
+        background-color: rgb(100, 255, 000);
+    }
+
+    35% {
+        background-color: rgb(000, 255, 000);
+    }
+
+    40% {
+        background-color: rgb(000, 255, 100);
+    }
+
+    45% {
+        background-color: rgb(000, 255, 200);
+    }
+
+    50% {
+        background-color: rgb(000, 255, 255);
+    }
+
+    55% {
+        background-color: rgb(000, 200, 255);
+    }
+
+    60% {
+        background-color: rgb(000, 100, 255);
+    }
+
+    70% {
+        background-color: rgb(000, 000, 255);
+    }
+
+    75% {
+        background-color: rgb(100, 000, 255);
+    }
+
+    80% {
+        background-color: rgb(200, 000, 255);
+    }
+
+    85% {
+        background-color: rgb(255, 000, 255);
+    }
+
+    90% {
+        background-color: rgb(255, 000, 200);
+    }
+
+    95% {
+        background-color: rgb(255, 000, 100);
+    }
+
+    100% {
+        background-color: rgb(255, 000, 000);
+    }
+}
