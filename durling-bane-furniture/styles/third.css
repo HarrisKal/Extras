@@ -1,0 +1,35 @@
+.third {
+    background: url(../assets/background3.jpg) no-repeat center center;
+    height: 80vh;
+}
+
+.third h1 {
+    font-size: 3em;
+}
+
+.third form {
+    margin: 8em;
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+}
+
+/* .third .form-input {
+    border: none;
+}
+
+.third .form-name {
+    height: 1em;
+} */
+
+
+
+#email-icon,
+#name-icon {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+}

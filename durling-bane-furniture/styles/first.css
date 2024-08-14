@@ -1,0 +1,11 @@
+.first {
+    background: url(../assets/background1.png) no-repeat center center;
+    min-width: 100vw;
+    padding-top: 10em;
+    height: 80vh;
+}
+
+.first h1:first-child {
+    color: #e2dbdb;
+    text-align: center;
+}

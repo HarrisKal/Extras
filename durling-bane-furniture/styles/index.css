@@ -1,0 +1,14 @@
+@import '/styles/first.css';
+@import '/styles/second.css';
+@import '/styles/third.css';
+
+body {
+    margin: 0;
+    color: #e2dbdb;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+}

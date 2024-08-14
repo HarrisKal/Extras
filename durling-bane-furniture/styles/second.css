@@ -1,0 +1,39 @@
+.second {
+    background: url(../assets/background2.png) no-repeat center center;
+    display: grid;
+    color: rgb(162, 160, 157);
+    height: 90vh;
+    grid-template: 1fr 1fr / 1fr 2fr 1fr;
+    grid-template-areas:
+        'image1 text1 text1'
+        'text2 text2 image2';
+}
+
+img {
+    width: 30vw;
+    margin: 3em;
+}
+
+.second p {
+    font-size: 2vw;
+}
+
+.second * {
+    margin: 1em;
+}
+
+#image1 {
+    grid-area: image1;
+}
+
+#text1 {
+    grid-area: text1;
+}
+
+#image2 {
+    grid-area: image2;
+}
+
+#text2 {
+    grid-area: text2;
+}
